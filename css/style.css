@@ -584,7 +584,7 @@ h4 { font-size: 1rem; }
 .hero-slide {
   position: absolute;
   inset: 0;
-  background-size: 110%;
+  background-size: cover;
   background-position: center;
   opacity: 0;
   transition: opacity 1.2s ease;
@@ -596,8 +596,8 @@ h4 { font-size: 1rem; }
 }
 
 @keyframes heroZoom {
-  0%   { background-size: 110%; }
-  100% { background-size: 120%; }
+  0%   { transform: scale(1); }
+  100% { transform: scale(1.06); }
 }
 
 .hero-overlay {
@@ -1709,6 +1709,11 @@ h4 { font-size: 1rem; }
 }
 
 @media (max-width: 480px) {
+  .hero { min-height: 100svh; }
+  .hero-content { padding: 110px 20px 60px; }
+  .hero-overlay {
+    background: linear-gradient(180deg, rgba(8,8,8,0.5) 0%, rgba(8,8,8,0.78) 100%);
+  }
   .hero-ctas { flex-direction: column; align-items: center; }
   .btn-lg { width: 100%; text-align: center; }
   .gallery-grid { grid-template-columns: 1fr; }
