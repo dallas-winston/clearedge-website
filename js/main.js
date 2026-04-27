@@ -55,7 +55,7 @@ function getServiceLabel(val) {
   const map = {
     'ppf-partial': 'PPF — Partial Front',
     'ppf-full-front': 'PPF — Full Front',
-    'ppf-track': 'PPF — Track Package',
+    'ppf-full-front-lower-sides': 'PPF — Full Front + Lower Sides',
     'ppf-full-body': 'PPF — Full Body',
     'ceramic': 'Ceramic Coating',
     'tint': 'Window Tint',

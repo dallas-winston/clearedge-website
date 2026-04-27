@@ -9,6 +9,23 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <!-- Meta Pixel Code -->
+  <script>
+  !function(f,b,e,v,n,t,s)
+  {if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};
+  if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
+  n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];
+  s.parentNode.insertBefore(t,s)}(window, document,'script',
+  'https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '26513218314954688');
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=26513218314954688&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Meta Pixel Code -->
 </head>
 <body>
 
@@ -44,7 +61,7 @@
                 <option value="" disabled selected>What are you looking for?</option>
                 <option value="ppf-partial">PPF - Partial Front</option>
                 <option value="ppf-full-front">PPF - Full Front</option>
-                <option value="ppf-track">PPF - Track Package</option>
+                <option value="ppf-full-front-lower-sides">PPF - Full Front + Lower Sides</option>
                 <option value="ppf-full-body">PPF - Full Body</option>
                 <option value="ceramic">Ceramic Coating</option>
                 <option value="tint">Window Tint</option>
@@ -192,16 +209,16 @@
           <p class="ppf-visual-title">Partial Front PPF</p>
           <p class="ppf-visual-desc">Half Hood, Front Bumper &amp; Partial Fender</p>
         </div>
-        <div class="ppf-visual-item popular" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar">
+        <div class="ppf-visual-item popular" data-zones="front-bumper,headlight,hood,front-fender">
           <div class="ppf-visual-badge">Most Popular</div>
           <div class="car-svg-container"></div>
           <p class="ppf-visual-title">Full Front PPF</p>
-          <p class="ppf-visual-desc">Full Hood, Front Bumper, Fenders &amp; Mirrors</p>
+          <p class="ppf-visual-desc">Full Hood, Front Bumper &amp; Fenders</p>
         </div>
-        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar,rocker,door,rear-bumper">
+        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar,rocker,door">
           <div class="car-svg-container"></div>
-          <p class="ppf-visual-title">Track Package PPF</p>
-          <p class="ppf-visual-desc">Full Front + Rocker Panels, Door Edges &amp; Rear Bumper</p>
+          <p class="ppf-visual-title">Full Front + Lower Sides PPF</p>
+          <p class="ppf-visual-desc">Full Front + Rocker Panels, Lower Doors &amp; Mirrors</p>
         </div>
         <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar,rocker,door,rear-bumper,trunk,rear-quarter,roof">
           <div class="car-svg-container"></div>
@@ -218,7 +235,6 @@
             <li>Hood (partial, leading edge)</li>
             <li>Front bumper</li>
             <li>Fender edges</li>
-            <li>Mirror caps</li>
           </ul>
           <a href="#quote" class="btn btn-outline">Get Quote</a>
         </div>
@@ -230,20 +246,18 @@
             <li>Full hood</li>
             <li>Full front bumper</li>
             <li>Full fenders</li>
-            <li>Side mirrors</li>
-            <li>Headlights & A-pillars</li>
           </ul>
           <a href="#quote" class="btn btn-gold">Get Quote</a>
         </div>
         <div class="package-card">
-          <h3>Track Package</h3>
+          <h3>Full Front + Lower Sides</h3>
           <p class="package-desc">Maximum protection for performance and high-mileage drivers</p>
           <ul>
             <li>Everything in Full Front</li>
             <li>Rocker panels</li>
-            <li>Door edges & cup handles</li>
-            <li>Rear bumper</li>
-            <li>Trunk ledge</li>
+            <li>Lower doors & cup handles</li>
+            <li>Mirrors</li>
+            <li>Headlights & A-pillars</li>
           </ul>
           <a href="#quote" class="btn btn-outline">Get Quote</a>
         </div>
@@ -516,7 +530,7 @@
                 <option value="" disabled selected>Select a service...</option>
                 <option value="ppf-partial">PPF - Partial Front</option>
                 <option value="ppf-full-front">PPF - Full Front</option>
-                <option value="ppf-track">PPF - Track Package</option>
+                <option value="ppf-full-front-lower-sides">PPF - Full Front + Lower Sides</option>
                 <option value="ppf-full-body">PPF - Full Body</option>
                 <option value="ceramic">Ceramic Coating</option>
                 <option value="tint">Window Tint</option>
