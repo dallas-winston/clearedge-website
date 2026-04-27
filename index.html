@@ -1,0 +1,498 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>ClearEdge Protective Films | PPF, Ceramic Coating & Window Tint — Kennesaw, GA</title>
+  <meta name="description" content="Kennesaw, Georgia's premier paint protection film, ceramic coating, and window tint specialists. Protecting your investment with precision installs and a 10-year warranty.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- QUOTE POPUP -->
+  <div class="popup-overlay" id="quotePopup" role="dialog" aria-modal="true" aria-labelledby="popupTitle">
+    <div class="popup">
+      <div class="popup-header">
+        <h2 id="popupTitle">Get a Custom Quote</h2>
+        <button class="popup-close" id="popupClose" aria-label="Close">✕</button>
+      </div>
+      <div class="popup-body">
+        <h3>Contact Form</h3>
+        <form class="popup-form" id="popupForm" novalidate>
+          <div class="popup-field">
+            <label for="popupName">Name <span>(required)</span></label>
+            <input type="text" id="popupName" name="name" placeholder="Enter your full name" required>
+          </div>
+          <div class="popup-field">
+            <label for="popupPhone">Phone Number <span>(required)</span></label>
+            <div class="popup-phone-wrap">
+              <div class="popup-phone-flag">🇺🇸 ▾</div>
+              <input type="tel" id="popupPhone" name="phone" placeholder="Enter your phone number" required>
+            </div>
+          </div>
+          <div class="popup-field">
+            <label for="popupEmail">Email Address <span>(required)</span></label>
+            <input type="email" id="popupEmail" name="email" placeholder="Enter your email address" required>
+          </div>
+          <div class="popup-field">
+            <label for="popupService">Service Interested In <span>(required)</span></label>
+            <div class="popup-select-wrap">
+              <select id="popupService" name="service" required>
+                <option value="" disabled selected>What are you looking for?</option>
+                <option value="ppf-partial">PPF — Partial Front</option>
+                <option value="ppf-full-front">PPF — Full Front</option>
+                <option value="ppf-track">PPF — Track Package</option>
+                <option value="ppf-full-body">PPF — Full Body</option>
+                <option value="ceramic">Ceramic Coating</option>
+                <option value="tint">Window Tint</option>
+                <option value="ppf-ceramic">PPF + Ceramic (bundle)</option>
+                <option value="full-package">Full Package (PPF + Ceramic + Tint)</option>
+                <option value="not-sure">Not sure — need guidance</option>
+              </select>
+            </div>
+          </div>
+          <div class="popup-field">
+            <label for="popupVehicle">Vehicle Information <span>(required)</span></label>
+            <input type="text" id="popupVehicle" name="vehicle" placeholder="Year, Make, Model" required>
+            <p class="popup-vehicle-hint">Please only provide the vehicle year, make, and model. We will reach out to go over the specifics of your request.</p>
+          </div>
+          <div class="popup-field">
+            <div class="popup-consent">
+              <input type="checkbox" id="popupSmsConsent" name="smsConsent" checked>
+              <div class="popup-consent-text">
+                <strong>SMS Messaging Consent</strong>
+                <p>By checking this box, you consent to receive emails, phone calls, and SMS messages regarding your quote, service updates, and occasional special promotions from ClearEdge Protective Films. Messaging frequency may vary. Message and data rates may apply. You can opt out any time by texting STOP. For assistance, text HELP or contact us at (770) 555-0000.</p>
+              </div>
+            </div>
+          </div>
+          <button type="submit" class="popup-submit">Get My Free Quote →</button>
+          <p class="popup-disclaimer">We respond within 24 hours. No pressure, no spam.</p>
+        </form>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <nav class="nav">
+      <a href="index.html" class="logo">
+        <img src="images/logo.png" alt="ClearEdge Film & Coatings" class="logo-img">
+      </a>
+      <div class="nav-links">
+        <a href="#services">Services</a>
+        <a href="gallery.html">Gallery</a>
+        <a href="about.html">About</a>
+        <a href="faq.html">FAQ</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="nav-right">
+        <a href="tel:+17705550000" class="nav-phone">(770) 555-0000</a>
+        <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      </div>
+      <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
+        <span></span><span></span><span></span>
+      </button>
+    </nav>
+    <div class="nav-mobile" id="navMobile">
+      <a href="#services">Services</a>
+      <a href="gallery.html">Gallery</a>
+      <a href="about.html">About</a>
+      <a href="faq.html">FAQ</a>
+      <a href="contact.html">Contact</a>
+      <a href="tel:+17705550000">(770) 555-0000</a>
+      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+    </div>
+  </header>
+
+  <!-- HERO -->
+  <section class="hero">
+    <div class="hero-slides">
+      <div class="hero-slide active" style="background-image: url('images/bmw-m4.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('images/JOHN1.png')"></div>
+      <div class="hero-slide" style="background-image: url('images/audi-rs6.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('images/bentley.jpg'); background-position: 65% center;"></div>
+    </div>
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+      <p class="hero-eyebrow">Kennesaw, Georgia's Premier Installer</p>
+      <h1>Atlanta Area's<br><span class="gold">Premier Protection</span><br>Specialists</h1>
+      <p class="hero-sub">Professional paint protection film, ceramic coating, and window tint — installed with precision by certified specialists in Kennesaw, GA.</p>
+      <div class="hero-ctas">
+        <a href="contact.html" class="btn btn-gold btn-lg">Get Free Quote</a>
+        <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- STATS BAR -->
+  <section class="stats-bar">
+    <div class="stat">
+      <span class="stat-num" data-target="500">0</span><span class="stat-suffix">+</span>
+      <span class="stat-label">Vehicles Protected</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="5.0">0</span><span class="stat-suffix">★</span>
+      <span class="stat-label">Average Rating</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="10">0</span><span class="stat-suffix">+ Yrs</span>
+      <span class="stat-label">Experience</span>
+    </div>
+    <div class="stat">
+      <span class="stat-num" data-target="10">0</span><span class="stat-suffix">-Yr</span>
+      <span class="stat-label">PPF Warranty</span>
+    </div>
+  </section>
+
+  <!-- SERVICES -->
+  <section class="section" id="services">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">What We Do</p>
+        <h2>Complete Vehicle Protection</h2>
+        <p class="section-sub">Everything your car needs to stay showroom-fresh — under one roof in Kennesaw.</p>
+      </div>
+      <div class="services-grid">
+        <div class="service-card">
+          <div class="service-icon">🛡️</div>
+          <h3>Paint Protection Film</h3>
+          <p>Self-healing urethane film that shields your paint from rock chips, road debris, and scratches. Near-invisible protection backed by a 10-year manufacturer warranty.</p>
+          <a href="services/ppf.html" class="service-link">View PPF Packages →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-badge">Most Popular</div>
+          <div class="service-icon">✨</div>
+          <h3>Ceramic Coating</h3>
+          <p>A permanent hydrophobic shield that repels water, dirt, and UV rays while delivering a deep glossy finish that lasts years — not months. Makes maintenance effortless.</p>
+          <a href="services/ceramic.html" class="service-link">Learn About Ceramic →</a>
+        </div>
+        <div class="service-card">
+          <div class="service-icon">🪟</div>
+          <h3>Window Tint</h3>
+          <p>Premium ceramic window film that blocks 99% of UV rays and dramatically reduces heat. Protect your interior and stay comfortable — Georgia summers are no joke.</p>
+          <a href="services/tint.html" class="service-link">Window Tint Options →</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PPF PACKAGES -->
+  <section class="packages section" id="packages">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Paint Protection Film</p>
+        <h2>Coverage That Fits Your Drive</h2>
+        <p class="section-sub">Not every car needs full-body coverage. Choose the level of protection that makes sense for how you drive and what you value most.</p>
+      </div>
+      <!-- Visual car diagram -->
+      <div class="ppf-visual-grid">
+        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood-partial,front-fender">
+          <div class="car-svg-container"></div>
+          <p class="ppf-visual-title">Partial Front PPF</p>
+          <p class="ppf-visual-desc">Half Hood, Front Bumper &amp; Partial Fender</p>
+        </div>
+        <div class="ppf-visual-item popular" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar">
+          <div class="ppf-visual-badge">Most Popular</div>
+          <div class="car-svg-container"></div>
+          <p class="ppf-visual-title">Full Front PPF</p>
+          <p class="ppf-visual-desc">Full Hood, Front Bumper, Fenders &amp; Mirrors</p>
+        </div>
+        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar,rocker,door,rear-bumper">
+          <div class="car-svg-container"></div>
+          <p class="ppf-visual-title">Track Package PPF</p>
+          <p class="ppf-visual-desc">Full Front + Rocker Panels, Door Edges &amp; Rear Bumper</p>
+        </div>
+        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar,rocker,door,rear-bumper,trunk,rear-quarter,roof">
+          <div class="car-svg-container"></div>
+          <p class="ppf-visual-title">Full Body PPF</p>
+          <p class="ppf-visual-desc">Complete Coverage — All Body Panels &amp; Surfaces</p>
+        </div>
+      </div>
+
+      <div class="packages-grid">
+        <div class="package-card">
+          <h3>Partial Front</h3>
+          <p class="package-desc">Essential protection for the highest-impact zones</p>
+          <ul>
+            <li>Hood (partial — leading edge)</li>
+            <li>Front bumper</li>
+            <li>Fender edges</li>
+            <li>Mirror caps</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Get Quote</a>
+        </div>
+        <div class="package-card popular">
+          <div class="package-badge">Most Popular</div>
+          <h3>Full Front</h3>
+          <p class="package-desc">The most recommended package for daily drivers</p>
+          <ul>
+            <li>Full hood</li>
+            <li>Full front bumper</li>
+            <li>Full fenders</li>
+            <li>Side mirrors</li>
+            <li>Headlights & A-pillars</li>
+          </ul>
+          <a href="contact.html" class="btn btn-gold">Get Quote</a>
+        </div>
+        <div class="package-card">
+          <h3>Track Package</h3>
+          <p class="package-desc">Maximum protection for performance and high-mileage drivers</p>
+          <ul>
+            <li>Everything in Full Front</li>
+            <li>Rocker panels</li>
+            <li>Door edges & cup handles</li>
+            <li>Rear bumper</li>
+            <li>Trunk ledge</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Get Quote</a>
+        </div>
+        <div class="package-card">
+          <h3>Full Body</h3>
+          <p class="package-desc">Complete protection from every angle — the ultimate investment</p>
+          <ul>
+            <li>All body panels</li>
+            <li>Full roof option available</li>
+            <li>10-year warranty included</li>
+            <li>Self-healing film</li>
+            <li>Contact us for pricing</li>
+          </ul>
+          <a href="contact.html" class="btn btn-outline">Get Quote</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHY CLEAREDGE -->
+  <section class="section">
+    <div class="container">
+      <div class="why-grid">
+        <div class="why-content">
+          <p class="section-eyebrow">Why ClearEdge</p>
+          <h2>Precision Installs.<br>Proven Results.</h2>
+          <p>We're not a volume shop. Every vehicle gets our full attention, and every install is done right — or we make it right. We serve the greater Atlanta area with a reputation built on quality, not shortcuts.</p>
+          <div class="why-items">
+            <div class="why-item">
+              <div class="why-icon">✓</div>
+              <div>
+                <h4>Certified Installers</h4>
+                <p>Factory-trained, brand-certified technicians on every single job — no apprentices working unsupervised on your car.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">✓</div>
+              <div>
+                <h4>10-Year Warranty</h4>
+                <p>Industry-leading manufacturer warranty on all PPF installations. If the film fails, we make it right — no questions asked.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">✓</div>
+              <div>
+                <h4>Premium Films Only</h4>
+                <p>We only install top-tier brands. No budget films, no warehouse clearance product — only the best goes on your car.</p>
+              </div>
+            </div>
+            <div class="why-item">
+              <div class="why-icon">✓</div>
+              <div>
+                <h4>Climate-Controlled Facility</h4>
+                <p>Our installs happen in a clean, climate-regulated environment — not a garage bay open to the wind, bugs, and dust.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="why-image-placeholder">
+          <img src="images/JOHN1.png" alt="Technician installing PPF on a Porsche" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- PROCESS -->
+  <section class="process section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">How It Works</p>
+        <h2>Our 6-Step Installation Process</h2>
+      </div>
+      <div class="process-steps">
+        <div class="process-step">
+          <div class="step-num">01</div>
+          <h4>Free Consultation</h4>
+          <p>We assess your vehicle, discuss your coverage goals, and recommend the right package for your budget and driving habits.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">02</div>
+          <h4>Paint Inspection</h4>
+          <p>We inspect and document your paint's current condition before we begin — so there are no disputes about pre-existing damage.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">03</div>
+          <h4>Decontamination Wash</h4>
+          <p>Full decontamination wash and clay bar treatment removes all surface contaminants that could affect film adhesion.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">04</div>
+          <h4>Custom Film Cutting</h4>
+          <p>Film is computer-cut to your exact vehicle's template for a precise, edge-to-edge fit — no hand-cutting guesswork.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">05</div>
+          <h4>Professional Installation</h4>
+          <p>Our certified technicians install the film in our climate-controlled, dust-free facility for a flawless, bubble-free result.</p>
+        </div>
+        <div class="process-step">
+          <div class="step-num">06</div>
+          <h4>Final Walkthrough</h4>
+          <p>We walk you through the completed install before you drive away. You leave with aftercare instructions and a warranty card.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- TESTIMONIALS -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Client Reviews</p>
+        <h2>Real Results, Real Reviews</h2>
+        <p class="section-sub">Don't take our word for it. Here's what our clients say after picking up their cars.</p>
+      </div>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Had the full front PPF done on my 2023 Porsche 911. The install was absolutely flawless — you can't even tell the film is there. These guys know what they're doing. Worth every penny."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">MT</div>
+            <div>
+              <strong>Michael T.</strong>
+              <span>2023 Porsche 911 — Full Front PPF</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Got the ceramic coating and window tint package on my Tesla Model Y. The team walked me through everything, the shop was spotless, and the results speak for themselves. This is the place in Atlanta."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">SK</div>
+            <div>
+              <strong>Sarah K.</strong>
+              <span>Tesla Model Y — Ceramic + Window Tint</span>
+            </div>
+          </div>
+        </div>
+        <div class="testimonial-card">
+          <div class="testimonial-stars">★★★★★</div>
+          <p>"Best in the Atlanta area, period. Had three shops quote me — ClearEdge wasn't the cheapest but they were the most professional by a mile. No pressure, just quality. My M4 looks incredible."</p>
+          <div class="testimonial-author">
+            <div class="author-avatar">JR</div>
+            <div>
+              <strong>James R.</strong>
+              <span>BMW M4 — Full Body PPF</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOW MUCH CTA -->
+  <section class="quote-cta">
+    <div class="container">
+      <div class="quote-cta-inner">
+        <h2>How Much For My Car?</h2>
+        <p>Every vehicle is different. Get a personalized quote in 24 hours — no pressure, no commitment, no sales games.</p>
+        <a href="contact.html" class="btn btn-gold btn-lg">Get My Free Quote</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FAQ PREVIEW -->
+  <section class="section">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Common Questions</p>
+        <h2>Answers to What You're Wondering</h2>
+      </div>
+      <div class="faq-list">
+        <div class="faq-item">
+          <button class="faq-q">Is PPF worth it?</button>
+          <div class="faq-a">
+            <p>For most car owners — yes. PPF preserves your paint's condition and protects your vehicle's resale value. A full-front install can pay for itself the first time a rock chip doesn't ruin your hood. On a $60,000+ car, it's cheap insurance.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">How long does PPF installation take?</button>
+          <div class="faq-a">
+            <p>Partial front installs take approximately 1 day. Full front takes 1–2 days. Full body installs typically take 3–5 days depending on the vehicle's complexity.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Does PPF look visible on my car?</button>
+          <div class="faq-a">
+            <p>Modern PPF is nearly invisible when professionally installed. There are slight edges at the film boundary, but on most vehicles, you'd need to know exactly where to look to find them. Matte/stealth film is also available if you want to change your finish.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">What are the downsides of PPF?</button>
+          <div class="faq-a">
+            <p>PPF is an investment — full-body installs start in the thousands. Film edges can be visible on certain panel shapes. And while PPF is removable, removal should always be done professionally to avoid paint damage. It also won't fix existing paint damage — only protect against future damage.</p>
+          </div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q">Can I combine PPF with ceramic coating?</button>
+          <div class="faq-a">
+            <p>Absolutely — and we recommend it. PPF handles the physical protection (rocks, chips, scratches) while ceramic coating goes on top for hydrophobic properties and an enhanced gloss. The combo is the gold standard for vehicle protection.</p>
+          </div>
+        </div>
+      </div>
+      <div class="faq-more">
+        <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <a href="index.html" class="logo">
+            <img src="images/logo.png" alt="ClearEdge Film & Coatings" class="logo-img">
+          </a>
+          <p style="margin-top:20px;">Kennesaw, Georgia's premier paint protection film, ceramic coating, and window tint specialists. Serving the greater Atlanta area.</p>
+        </div>
+        <div class="footer-links">
+          <h4>Services</h4>
+          <a href="services/ppf.html">Paint Protection Film</a>
+          <a href="services/ceramic.html">Ceramic Coating</a>
+          <a href="services/tint.html">Window Tint</a>
+        </div>
+        <div class="footer-links">
+          <h4>Company</h4>
+          <a href="about.html">About Us</a>
+          <a href="gallery.html">Gallery</a>
+          <a href="faq.html">FAQ</a>
+          <a href="contact.html">Contact</a>
+        </div>
+        <div class="footer-contact">
+          <h4>Contact</h4>
+          <a href="tel:+17705550000">(770) 555-0000</a>
+          <a href="mailto:hello@clearedgefilms.com">hello@clearedgefilms.com</a>
+          <p>Kennesaw, GA 30144</p>
+          <p>Mon–Fri: 8am – 6pm<br>Saturday: 9am – 4pm<br>Sunday: Closed</p>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>&copy; 2024 ClearEdge Protective Films. All rights reserved.</p>
+        <p>Serving Kennesaw, Marietta, Acworth, Canton & greater Atlanta.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
