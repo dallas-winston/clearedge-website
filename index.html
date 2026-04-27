@@ -64,7 +64,7 @@
               <input type="checkbox" id="popupSmsConsent" name="smsConsent" checked>
               <div class="popup-consent-text">
                 <strong>SMS Messaging Consent</strong>
-                <p>By checking this box, you consent to receive emails, phone calls, and SMS messages regarding your quote, service updates, and occasional special promotions from ClearEdge Protective Films. Messaging frequency may vary. Message and data rates may apply. You can opt out any time by texting STOP. For assistance, text HELP or contact us at (770) 555-0000.</p>
+                <p>By checking this box, you consent to receive emails, phone calls, and SMS messages regarding your quote, service updates, and occasional special promotions from ClearEdge Protective Films. Messaging frequency may vary. Message and data rates may apply. You can opt out any time by texting STOP. For assistance, text HELP or contact us at (678) 983-5212.</p>
               </div>
             </div>
           </div>
@@ -78,19 +78,18 @@
   <!-- HEADER -->
   <header class="header" id="header">
     <nav class="nav">
-      <a href="index.html" class="logo">
-        <img src="images/logo.png" alt="ClearEdge Film & Coatings" class="logo-img">
+      <a href="#" class="logo">
+        <img src="images/logo.png?v=2" alt="ClearEdge Film & Coatings" class="logo-img">
       </a>
       <div class="nav-links">
         <a href="#services">Services</a>
-        <a href="gallery.html">Gallery</a>
-        <a href="about.html">About</a>
-        <a href="faq.html">FAQ</a>
-        <a href="contact.html">Contact</a>
+        <a href="#packages">PPF Packages</a>
+        <a href="#process">How It Works</a>
+        <a href="#faq">FAQ</a>
       </div>
       <div class="nav-right">
-        <a href="tel:+17705550000" class="nav-phone">(770) 555-0000</a>
-        <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+        <a href="tel:+16789835212" class="nav-phone">(678) 983-5212</a>
+        <a href="#" class="btn btn-gold" id="navQuoteBtn">Get a Quote</a>
       </div>
       <button class="nav-toggle" id="navToggle" aria-label="Toggle menu">
         <span></span><span></span><span></span>
@@ -98,22 +97,22 @@
     </nav>
     <div class="nav-mobile" id="navMobile">
       <a href="#services">Services</a>
-      <a href="gallery.html">Gallery</a>
-      <a href="about.html">About</a>
-      <a href="faq.html">FAQ</a>
-      <a href="contact.html">Contact</a>
-      <a href="tel:+17705550000">(770) 555-0000</a>
-      <a href="contact.html" class="btn btn-gold">Get a Quote</a>
+      <a href="#packages">PPF Packages</a>
+      <a href="#process">How It Works</a>
+      <a href="#faq">FAQ</a>
+      <a href="tel:+16789835212">(678) 983-5212</a>
+      <a href="#" class="btn btn-gold mobile-quote-btn">Get a Quote</a>
     </div>
   </header>
 
   <!-- HERO -->
   <section class="hero">
     <div class="hero-slides">
-      <div class="hero-slide active" style="background-image: url('images/bmw-m4.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('images/JOHN1.png')"></div>
-      <div class="hero-slide" style="background-image: url('images/audi-rs6.jpg')"></div>
-      <div class="hero-slide" style="background-image: url('images/bentley.jpg'); background-position: 65% center;"></div>
+      <div class="hero-slide active" style="background-image: url('images/hero-1.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-2.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-3.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-4.jpg')"></div>
+      <div class="hero-slide" style="background-image: url('images/hero-5.jpg')"></div>
     </div>
     <div class="hero-overlay"></div>
     <div class="hero-content">
@@ -121,7 +120,7 @@
       <h1>Atlanta Area's<br><span class="gold">Premier Protection</span><br>Specialists</h1>
       <p class="hero-sub">Professional paint protection film, ceramic coating, and window tint — installed with precision by certified specialists in Kennesaw, GA.</p>
       <div class="hero-ctas">
-        <a href="contact.html" class="btn btn-gold btn-lg">Get Free Quote</a>
+        <a href="#quote" class="btn btn-gold btn-lg">Get Free Quote</a>
         <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
       </div>
     </div>
@@ -160,20 +159,20 @@
           <div class="service-icon">🛡️</div>
           <h3>Paint Protection Film</h3>
           <p>Self-healing urethane film that shields your paint from rock chips, road debris, and scratches. Near-invisible protection backed by a 10-year manufacturer warranty.</p>
-          <a href="services/ppf.html" class="service-link">View PPF Packages →</a>
+          <a href="#packages" class="service-link">View PPF Packages →</a>
         </div>
         <div class="service-card">
           <div class="service-badge">Most Popular</div>
           <div class="service-icon">✨</div>
           <h3>Ceramic Coating</h3>
           <p>A permanent hydrophobic shield that repels water, dirt, and UV rays while delivering a deep glossy finish that lasts years — not months. Makes maintenance effortless.</p>
-          <a href="services/ceramic.html" class="service-link">Learn About Ceramic →</a>
+          <a href="#quote" class="service-link">Get a Ceramic Quote →</a>
         </div>
         <div class="service-card">
           <div class="service-icon">🪟</div>
           <h3>Window Tint</h3>
           <p>Premium ceramic window film that blocks 99% of UV rays and dramatically reduces heat. Protect your interior and stay comfortable — Georgia summers are no joke.</p>
-          <a href="services/tint.html" class="service-link">Window Tint Options →</a>
+          <a href="#quote" class="service-link">Get a Tint Quote →</a>
         </div>
       </div>
     </div>
@@ -187,7 +186,6 @@
         <h2>Coverage That Fits Your Drive</h2>
         <p class="section-sub">Not every car needs full-body coverage. Choose the level of protection that makes sense for how you drive and what you value most.</p>
       </div>
-      <!-- Visual car diagram -->
       <div class="ppf-visual-grid">
         <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood-partial,front-fender">
           <div class="car-svg-container"></div>
@@ -222,7 +220,7 @@
             <li>Fender edges</li>
             <li>Mirror caps</li>
           </ul>
-          <a href="contact.html" class="btn btn-outline">Get Quote</a>
+          <a href="#quote" class="btn btn-outline">Get Quote</a>
         </div>
         <div class="package-card popular">
           <div class="package-badge">Most Popular</div>
@@ -235,7 +233,7 @@
             <li>Side mirrors</li>
             <li>Headlights & A-pillars</li>
           </ul>
-          <a href="contact.html" class="btn btn-gold">Get Quote</a>
+          <a href="#quote" class="btn btn-gold">Get Quote</a>
         </div>
         <div class="package-card">
           <h3>Track Package</h3>
@@ -247,7 +245,7 @@
             <li>Rear bumper</li>
             <li>Trunk ledge</li>
           </ul>
-          <a href="contact.html" class="btn btn-outline">Get Quote</a>
+          <a href="#quote" class="btn btn-outline">Get Quote</a>
         </div>
         <div class="package-card">
           <h3>Full Body</h3>
@@ -259,7 +257,7 @@
             <li>Self-healing film</li>
             <li>Contact us for pricing</li>
           </ul>
-          <a href="contact.html" class="btn btn-outline">Get Quote</a>
+          <a href="#quote" class="btn btn-outline">Get Quote</a>
         </div>
       </div>
     </div>
@@ -305,14 +303,14 @@
           </div>
         </div>
         <div class="why-image-placeholder">
-          <img src="images/JOHN1.png" alt="Technician installing PPF on a Porsche" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
+          <img src="images/hero-4.jpg" alt="Technician installing PPF on a Porsche" style="width:100%;height:100%;object-fit:cover;border-radius:inherit;">
         </div>
       </div>
     </div>
   </section>
 
   <!-- PROCESS -->
-  <section class="process section">
+  <section class="process section" id="process">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">How It Works</p>
@@ -353,65 +351,19 @@
     </div>
   </section>
 
-  <!-- TESTIMONIALS -->
-  <section class="section">
-    <div class="container">
-      <div class="section-header">
-        <p class="section-eyebrow">Client Reviews</p>
-        <h2>Real Results, Real Reviews</h2>
-        <p class="section-sub">Don't take our word for it. Here's what our clients say after picking up their cars.</p>
-      </div>
-      <div class="testimonials-grid">
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"Had the full front PPF done on my 2023 Porsche 911. The install was absolutely flawless — you can't even tell the film is there. These guys know what they're doing. Worth every penny."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">MT</div>
-            <div>
-              <strong>Michael T.</strong>
-              <span>2023 Porsche 911 — Full Front PPF</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"Got the ceramic coating and window tint package on my Tesla Model Y. The team walked me through everything, the shop was spotless, and the results speak for themselves. This is the place in Atlanta."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">SK</div>
-            <div>
-              <strong>Sarah K.</strong>
-              <span>Tesla Model Y — Ceramic + Window Tint</span>
-            </div>
-          </div>
-        </div>
-        <div class="testimonial-card">
-          <div class="testimonial-stars">★★★★★</div>
-          <p>"Best in the Atlanta area, period. Had three shops quote me — ClearEdge wasn't the cheapest but they were the most professional by a mile. No pressure, just quality. My M4 looks incredible."</p>
-          <div class="testimonial-author">
-            <div class="author-avatar">JR</div>
-            <div>
-              <strong>James R.</strong>
-              <span>BMW M4 — Full Body PPF</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-
   <!-- HOW MUCH CTA -->
   <section class="quote-cta">
     <div class="container">
       <div class="quote-cta-inner">
         <h2>How Much For My Car?</h2>
         <p>Every vehicle is different. Get a personalized quote in 24 hours — no pressure, no commitment, no sales games.</p>
-        <a href="contact.html" class="btn btn-gold btn-lg">Get My Free Quote</a>
+        <a href="#quote" class="btn btn-gold btn-lg">Get My Free Quote</a>
       </div>
     </div>
   </section>
 
-  <!-- FAQ PREVIEW -->
-  <section class="section">
+  <!-- FAQ -->
+  <section class="section" id="faq">
     <div class="container">
       <div class="section-header">
         <p class="section-eyebrow">Common Questions</p>
@@ -449,8 +401,156 @@
           </div>
         </div>
       </div>
-      <div class="faq-more">
-        <a href="faq.html" class="btn btn-outline">View All FAQs</a>
+    </div>
+  </section>
+
+  <!-- INLINE QUOTE FORM -->
+  <section class="section" id="quote">
+    <div class="container">
+      <div class="section-header">
+        <p class="section-eyebrow">Let's Talk</p>
+        <h2>Get a Free Quote</h2>
+        <p class="section-sub">Fill out the form and we'll get back to you within 24 hours with pricing for your vehicle. No pressure, no obligation.</p>
+      </div>
+      <div class="contact-grid">
+
+        <div class="contact-info">
+          <h3>How to Reach Us</h3>
+          <p>Prefer to talk? Call us directly. Prefer to browse first? Fill out the form and we'll follow up at your pace.</p>
+
+          <div class="contact-details">
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📞</div>
+              <div>
+                <strong>Phone</strong>
+                <a href="tel:+16789835212">(678) 983-5212</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">✉️</div>
+              <div>
+                <strong>Email</strong>
+                <a href="mailto:dallas@clearedgeppf.com">dallas@clearedgeppf.com</a>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">📍</div>
+              <div>
+                <strong>Location</strong>
+                <p>Kennesaw, GA 30144<br><span style="font-size:0.8rem; color: var(--gray-600);">(Exact address provided upon booking)</span></p>
+              </div>
+            </div>
+            <div class="contact-detail">
+              <div class="contact-detail-icon">🕐</div>
+              <div>
+                <strong>Hours</strong>
+                <p>Monday – Friday: 8am – 6pm<br>Saturday: 9am – 4pm<br>Sunday: Closed</p>
+              </div>
+            </div>
+          </div>
+
+          <div style="margin-top:48px; padding: 28px; background: var(--surface); border: 1px solid var(--border);">
+            <p class="section-eyebrow" style="text-align:left; margin-bottom:12px;">What Happens Next?</p>
+            <div style="display:flex; flex-direction:column; gap:14px;">
+              <div style="display:flex; gap:12px; align-items:flex-start;">
+                <span style="color:var(--gold); font-family:var(--font-heading); font-weight:900; font-size:0.85rem; flex-shrink:0; padding-top:1px;">01</span>
+                <p style="font-size:0.88rem; color:var(--gray-400);">You submit the form with your vehicle details and service interest.</p>
+              </div>
+              <div style="display:flex; gap:12px; align-items:flex-start;">
+                <span style="color:var(--gold); font-family:var(--font-heading); font-weight:900; font-size:0.85rem; flex-shrink:0; padding-top:1px;">02</span>
+                <p style="font-size:0.88rem; color:var(--gray-400);">We review your request and respond within 24 hours with pricing.</p>
+              </div>
+              <div style="display:flex; gap:12px; align-items:flex-start;">
+                <span style="color:var(--gold); font-family:var(--font-heading); font-weight:900; font-size:0.85rem; flex-shrink:0; padding-top:1px;">03</span>
+                <p style="font-size:0.88rem; color:var(--gray-400);">If the quote works for you, we schedule your install. No pressure either way.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form">
+          <form id="contactForm" novalidate>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="John" required>
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Smith" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="email">Email *</label>
+                <input type="email" id="email" name="email" placeholder="john@example.com" required>
+              </div>
+              <div class="form-group">
+                <label for="phone">Phone</label>
+                <input type="tel" id="phone" name="phone" placeholder="(678) 983-5212">
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vehicleYear">Vehicle Year *</label>
+                <input type="text" id="vehicleYear" name="vehicleYear" placeholder="2024" required>
+              </div>
+              <div class="form-group">
+                <label for="vehicleMake">Make *</label>
+                <input type="text" id="vehicleMake" name="vehicleMake" placeholder="Porsche" required>
+              </div>
+            </div>
+            <div class="form-row">
+              <div class="form-group">
+                <label for="vehicleModel">Model *</label>
+                <input type="text" id="vehicleModel" name="vehicleModel" placeholder="911 GT3" required>
+              </div>
+              <div class="form-group">
+                <label for="vehicleColor">Color</label>
+                <input type="text" id="vehicleColor" name="vehicleColor" placeholder="Guards Red">
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="services">Service(s) Interested In *</label>
+              <select id="services" name="services" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="ppf-partial">PPF — Partial Front</option>
+                <option value="ppf-full-front">PPF — Full Front</option>
+                <option value="ppf-track">PPF — Track Package</option>
+                <option value="ppf-full-body">PPF — Full Body</option>
+                <option value="ceramic">Ceramic Coating</option>
+                <option value="tint">Window Tint</option>
+                <option value="ppf-ceramic">PPF + Ceramic Coating (bundle)</option>
+                <option value="ppf-tint">PPF + Window Tint (bundle)</option>
+                <option value="full-package">Full Package (PPF + Ceramic + Tint)</option>
+                <option value="not-sure">Not sure — need guidance</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Additional Details</label>
+              <textarea id="message" name="message" placeholder="Tell us anything relevant — existing paint condition, specific coverage questions, timeline, budget range, etc."></textarea>
+            </div>
+            <div class="form-group">
+              <label for="howFound">How did you find us?</label>
+              <select id="howFound" name="howFound">
+                <option value="" disabled selected>Select one...</option>
+                <option value="google">Google Search</option>
+                <option value="instagram">Instagram</option>
+                <option value="facebook">Facebook</option>
+                <option value="referral">Friend / Word of Mouth</option>
+                <option value="dealer">Dealership Referral</option>
+                <option value="other">Other</option>
+              </select>
+            </div>
+            <button type="submit" class="btn btn-gold btn-lg" style="width:100%; text-align:center;">
+              Submit Quote Request
+            </button>
+            <p style="font-size:0.78rem; color:var(--gray-400); text-align:center; margin-top:16px;">
+              We respond within 24 hours. No pressure, no spam, no obligation.
+            </p>
+          </form>
+        </div>
+
       </div>
     </div>
   </section>
@@ -460,34 +560,34 @@
     <div class="container">
       <div class="footer-grid">
         <div class="footer-brand">
-          <a href="index.html" class="logo">
-            <img src="images/logo.png" alt="ClearEdge Film & Coatings" class="logo-img">
+          <a href="#" class="logo">
+            <img src="images/logo.png?v=2" alt="ClearEdge Film & Coatings" class="logo-img">
           </a>
           <p style="margin-top:20px;">Kennesaw, Georgia's premier paint protection film, ceramic coating, and window tint specialists. Serving the greater Atlanta area.</p>
         </div>
         <div class="footer-links">
           <h4>Services</h4>
-          <a href="services/ppf.html">Paint Protection Film</a>
-          <a href="services/ceramic.html">Ceramic Coating</a>
-          <a href="services/tint.html">Window Tint</a>
+          <a href="#packages">Paint Protection Film</a>
+          <a href="#quote">Ceramic Coating</a>
+          <a href="#quote">Window Tint</a>
         </div>
         <div class="footer-links">
-          <h4>Company</h4>
-          <a href="about.html">About Us</a>
-          <a href="gallery.html">Gallery</a>
-          <a href="faq.html">FAQ</a>
-          <a href="contact.html">Contact</a>
+          <h4>Quick Links</h4>
+          <a href="#services">Services</a>
+          <a href="#process">How It Works</a>
+          <a href="#faq">FAQ</a>
+          <a href="#quote">Get a Quote</a>
         </div>
         <div class="footer-contact">
           <h4>Contact</h4>
-          <a href="tel:+17705550000">(770) 555-0000</a>
-          <a href="mailto:hello@clearedgefilms.com">hello@clearedgefilms.com</a>
+          <a href="tel:+16789835212">(678) 983-5212</a>
+          <a href="mailto:dallas@clearedgeppf.com">dallas@clearedgeppf.com</a>
           <p>Kennesaw, GA 30144</p>
           <p>Mon–Fri: 8am – 6pm<br>Saturday: 9am – 4pm<br>Sunday: Closed</p>
         </div>
       </div>
       <div class="footer-bottom">
-        <p>&copy; 2024 ClearEdge Protective Films. All rights reserved.</p>
+        <p>&copy; 2026 ClearEdge Protective Films. All rights reserved.</p>
         <p>Serving Kennesaw, Marietta, Acworth, Canton & greater Atlanta.</p>
       </div>
     </div>

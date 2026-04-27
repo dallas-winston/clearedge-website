@@ -140,8 +140,6 @@ async function submitLead(formData, source) {
   const overlay = document.getElementById('quotePopup');
   if (!overlay) return;
 
-  if (sessionStorage.getItem('popupDismissed')) return;
-
   function openPopup() {
     overlay.classList.add('visible');
     document.body.style.overflow = 'hidden';
@@ -153,7 +151,16 @@ async function submitLead(formData, source) {
     sessionStorage.setItem('popupDismissed', '1');
   }
 
-  setTimeout(openPopup, 1500);
+  if (!sessionStorage.getItem('popupDismissed')) {
+    setTimeout(openPopup, 1500);
+  }
+
+  document.querySelectorAll('#navQuoteBtn, .mobile-quote-btn').forEach(function (btn) {
+    btn.addEventListener('click', function (e) {
+      e.preventDefault();
+      openPopup();
+    });
+  });
 
   document.getElementById('popupClose').addEventListener('click', closePopup);
 
@@ -445,7 +452,7 @@ if (contactForm) {
         services: contactForm.querySelector('[name="services"]').value,
         message: contactForm.querySelector('[name="message"]').value.trim(),
         howFound: contactForm.querySelector('[name="howFound"]').value,
-      }, 'Contact Page Form');
+      }, 'Landing Page Form');
 
       btn.textContent = 'Request Sent!';
       btn.style.background = '#2a7a2a';

@@ -54,8 +54,8 @@ clearedge/
 | Full Body | All body panels, Roof option, 10-year warranty, Custom quote only |
 
 ## Still Placeholder / TODO
-- Phone number: `(770) 555-0000` — replace with real number
-- Email: `hello@clearedgefilms.com` — replace with real email
+- ~~Phone number: `(678) 983-5212` — updated~~
+- ~~Email: `dallas@clearedgeppf.com` — updated~~
 - Gallery images: all placeholders — need real vehicle photos
 - Team section (about.html): placeholder initials — needs real photos/bios
 - Copyright year: currently 2024 — update to current year
