@@ -231,15 +231,15 @@
 }
 
 .popup-consent input[type="checkbox"] {
+  appearance: auto;
+  -webkit-appearance: checkbox;
   width: 20px;
   height: 20px;
   min-width: 20px;
-  border: 2px solid #d8dde6;
-  border-radius: 4px;
   accent-color: #1a1a6e;
   cursor: pointer;
   margin-top: 2px;
-  padding: 0;
+  flex-shrink: 0;
 }
 
 .popup-consent-text strong {
