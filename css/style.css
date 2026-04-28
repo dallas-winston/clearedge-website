@@ -116,7 +116,7 @@
   font-size: 0.82rem;
 }
 
-.popup-form input,
+.popup-form input:not([type="checkbox"]),
 .popup-form select {
   width: 100%;
   background: #fff;
@@ -133,7 +133,7 @@
 
 .popup-form input::placeholder { color: #aaa; }
 
-.popup-form input:focus,
+.popup-form input:not([type="checkbox"]):focus,
 .popup-form select:focus {
   border-color: #1a1a6e;
 }
