@@ -1,0 +1,225 @@
+/* =====================
+   Landing Page — Hero Layout Override
+   Two-column: copy left, form right
+   ===================== */
+.hero--landing {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+}
+
+.hero-landing-inner {
+  position: relative;
+  z-index: 2;
+  display: grid;
+  grid-template-columns: 1fr 420px;
+  gap: 60px;
+  align-items: center;
+  max-width: var(--max-w);
+  margin: 0 auto;
+  padding: 130px 24px 80px;
+  width: 100%;
+}
+
+.hero-content--left {
+  text-align: left;
+  padding: 0;
+  max-width: none;
+  margin: 0;
+  text-shadow: 0 2px 12px rgba(0,0,0,0.6);
+}
+
+.hero-content--left .hero-eyebrow {
+  justify-content: flex-start;
+}
+
+.hero-content--left .hero-sub {
+  margin-left: 0;
+  margin-right: 0;
+}
+
+.hero-content--left .hero-ctas {
+  justify-content: flex-start;
+}
+
+/* =====================
+   Hero Inline Form Card
+   ===================== */
+.hero-form-card {
+  background: rgba(17, 17, 17, 0.92);
+  border: 1px solid var(--border);
+  backdrop-filter: blur(16px);
+  -webkit-backdrop-filter: blur(16px);
+  padding: 36px 32px;
+  width: 100%;
+  text-shadow: none;
+}
+
+.hero-form-card h2 {
+  font-family: var(--font-heading);
+  font-size: 1.4rem;
+  font-weight: 900;
+  color: var(--white);
+  letter-spacing: 0.02em;
+  margin-bottom: 28px;
+  text-align: center;
+}
+
+.hero-form-field {
+  margin-bottom: 18px;
+}
+
+.hero-form-field label {
+  display: block;
+  font-family: var(--font-heading);
+  font-size: 0.68rem;
+  font-weight: 700;
+  letter-spacing: 0.12em;
+  text-transform: uppercase;
+  color: var(--gray-400);
+  margin-bottom: 8px;
+}
+
+.hero-form-field input,
+.hero-form-field select {
+  width: 100%;
+  background: var(--bg);
+  border: 1px solid var(--border);
+  color: var(--white);
+  font-family: var(--font-body);
+  font-size: 0.93rem;
+  padding: 13px 16px;
+  outline: none;
+  transition: border-color var(--transition);
+  border-radius: var(--radius);
+  appearance: none;
+}
+
+.hero-form-field input::placeholder {
+  color: var(--gray-600);
+}
+
+.hero-form-field input:focus,
+.hero-form-field select:focus {
+  border-color: var(--gold);
+}
+
+.hero-form-field select option {
+  background: var(--surface);
+}
+
+.hero-select-wrap {
+  position: relative;
+}
+
+.hero-select-wrap::after {
+  content: '▾';
+  position: absolute;
+  right: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  color: var(--gray-600);
+  pointer-events: none;
+  font-size: 0.85rem;
+}
+
+.hero-select-wrap select {
+  padding-right: 36px;
+}
+
+.hero-form-submit {
+  width: 100%;
+  text-align: center;
+  margin-top: 6px;
+}
+
+.hero-form-disclaimer {
+  font-size: 0.75rem;
+  color: var(--gray-600);
+  text-align: center;
+  margin-top: 14px;
+}
+
+/* =====================
+   Hero Form — Success State
+   ===================== */
+.hero-form-success {
+  display: none;
+  text-align: center;
+  padding: 32px 0;
+}
+
+.hero-form-success.visible {
+  display: block;
+}
+
+.hero-form-success-icon {
+  width: 52px;
+  height: 52px;
+  background: var(--gold);
+  color: #fff;
+  font-size: 1.4rem;
+  font-weight: 900;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0 auto 18px;
+}
+
+.hero-form-success p {
+  font-family: var(--font-heading);
+  font-size: 1.05rem;
+  font-weight: 700;
+  color: var(--white);
+  line-height: 1.5;
+}
+
+/* =====================
+   Responsive — Landing Hero
+   ===================== */
+@media (max-width: 900px) {
+  .hero-landing-inner {
+    grid-template-columns: 1fr;
+    gap: 40px;
+    padding-top: 110px;
+    padding-bottom: 60px;
+  }
+
+  .hero-content--left {
+    text-align: center;
+  }
+
+  .hero-content--left .hero-eyebrow {
+    justify-content: center;
+  }
+
+  .hero-content--left .hero-sub {
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  .hero-content--left .hero-ctas {
+    justify-content: center;
+  }
+
+  .hero-form-card {
+    max-width: 440px;
+    margin: 0 auto;
+  }
+}
+
+@media (max-width: 480px) {
+  .hero-landing-inner {
+    padding: 100px 16px 48px;
+    gap: 32px;
+  }
+
+  .hero-form-card {
+    padding: 28px 20px;
+  }
+
+  .hero-form-card h2 {
+    font-size: 1.2rem;
+  }
+}

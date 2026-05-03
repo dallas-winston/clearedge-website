@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;900&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/landing.css">
   <link rel="canonical" href="https://clearedgeppf.com/">
   <meta property="og:title" content="ClearEdge Protective Films | PPF, Ceramic Coating & Window Tint in Kennesaw, GA">
   <meta property="og:description" content="Kennesaw, Georgia's premier paint protection film, ceramic coating, and window tint specialists. Protecting your investment with precision installs and a 10-year warranty.">
@@ -146,62 +147,6 @@
     ]
   }
   </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "HowTo",
-    "name": "Our 6-Step PPF Installation Process",
-    "description": "How ClearEdge Protective Films installs paint protection film on your vehicle, from consultation to final walkthrough.",
-    "step": [
-      {
-        "@type": "HowToStep",
-        "position": 1,
-        "name": "Free Consultation",
-        "text": "We assess your vehicle, discuss your coverage goals, and recommend the right package for your budget and driving habits."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 2,
-        "name": "Paint Inspection",
-        "text": "We inspect and document your paint's current condition before we begin so there are no disputes about pre-existing damage."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 3,
-        "name": "Decontamination Wash",
-        "text": "Full decontamination wash and clay bar treatment removes all surface contaminants that could affect film adhesion."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 4,
-        "name": "Custom Film Cutting",
-        "text": "Film is computer-cut to your exact vehicle's template for a precise, edge-to-edge fit. No hand-cutting guesswork."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 5,
-        "name": "Professional Installation",
-        "text": "Our certified technicians install the film in our climate-controlled, dust-free facility for a flawless, bubble-free result."
-      },
-      {
-        "@type": "HowToStep",
-        "position": 6,
-        "name": "Final Walkthrough",
-        "text": "We walk you through the completed install before you drive away. You leave with aftercare instructions and a warranty card."
-      }
-    ]
-  }
-  </script>
-  <script type="application/ld+json">
-  {
-    "@context": "https://schema.org",
-    "@type": "WebPage",
-    "name": "ClearEdge Protective Films | PPF, Ceramic Coating & Window Tint in Kennesaw, GA",
-    "description": "Kennesaw, Georgia's premier paint protection film, ceramic coating, and window tint specialists. Protecting your investment with precision installs and a 10-year warranty.",
-    "url": "https://clearedgeppf.com",
-    "dateModified": "2026-05-02"
-  }
-  </script>
   <!-- Meta Pixel Code -->
   <script>
   !function(f,b,e,v,n,t,s)
@@ -317,8 +262,8 @@
 
   <main>
 
-  <!-- HERO -->
-  <section class="hero">
+  <!-- HERO (with inline estimate form) -->
+  <section class="hero hero--landing">
     <div class="hero-slides">
       <div class="hero-slide active" style="background-image: url('images/hero-1.jpg')"></div>
       <div class="hero-slide" style="background-image: url('images/hero-2.jpg')"></div>
@@ -327,13 +272,45 @@
       <div class="hero-slide" style="background-image: url('images/hero-5.jpg')"></div>
     </div>
     <div class="hero-overlay"></div>
-    <div class="hero-content">
-      <p class="hero-eyebrow">Kennesaw, Georgia's Premier Installer</p>
-      <h1>Atlanta Area's<br><span class="gold">Premier Protection</span><br>Specialists</h1>
-      <p class="hero-sub">Professional paint protection film, ceramic coating, and window tint installed with precision by certified specialists in Kennesaw, GA.</p>
-      <div class="hero-ctas">
-        <a href="#quote" class="btn btn-gold btn-lg">Get Free Quote</a>
-        <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
+    <div class="hero-landing-inner">
+      <div class="hero-content hero-content--left">
+        <p class="hero-eyebrow">Kennesaw, Georgia's Premier Installer</p>
+        <h1>Atlanta Area's<br><span class="gold">Premier Protection</span><br>Specialists</h1>
+        <p class="hero-sub">Professional paint protection film, ceramic coating, and window tint installed with precision by certified specialists in Kennesaw, GA.</p>
+        <div class="hero-ctas">
+          <a href="#services" class="btn btn-outline btn-lg">Our Services</a>
+        </div>
+      </div>
+      <div class="hero-form-card">
+        <h2>Get a Free Estimate</h2>
+        <form id="heroForm" novalidate>
+          <div class="hero-form-field">
+            <label for="heroName">Name</label>
+            <input type="text" id="heroName" name="name" placeholder="Your full name" required>
+          </div>
+          <div class="hero-form-field">
+            <label for="heroPhone">Phone Number</label>
+            <input type="tel" id="heroPhone" name="phone" placeholder="(555) 123-4567" required>
+          </div>
+          <div class="hero-form-field">
+            <label for="heroService">Service</label>
+            <div class="hero-select-wrap">
+              <select id="heroService" name="service" required>
+                <option value="" disabled selected>Select a service...</option>
+                <option value="ppf">Paint Protection Film</option>
+                <option value="ceramic">Ceramic Coating</option>
+                <option value="tint">Window Tint</option>
+                <option value="multiple">Multiple Services</option>
+              </select>
+            </div>
+          </div>
+          <button type="submit" class="btn btn-gold btn-lg hero-form-submit">Get My Free Estimate</button>
+          <p class="hero-form-disclaimer">We respond within 24 hours. No spam, no pressure.</p>
+        </form>
+        <div class="hero-form-success" id="heroFormSuccess">
+          <div class="hero-form-success-icon">✓</div>
+          <p>Thanks! We'll reach out within 24 hours.</p>
+        </div>
       </div>
     </div>
   </section>
@@ -399,40 +376,31 @@
         <p class="section-sub">Not every car needs full-body coverage. Choose the level of protection that makes sense for how you drive and what you value most.</p>
       </div>
       <div class="ppf-visual-grid">
-        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood-partial,front-fender">
-          <div class="car-svg-container"></div>
-          <p class="ppf-visual-title">Partial Front PPF</p>
-          <p class="ppf-visual-desc">Half Hood, Front Bumper &amp; Partial Fender</p>
-        </div>
-        <div class="ppf-visual-item popular" data-zones="front-bumper,headlight,hood,front-fender">
+        <div class="ppf-visual-item popular">
           <div class="ppf-visual-badge">Most Popular</div>
-          <div class="car-svg-container"></div>
+          <div class="ppf-visual-img">
+            <img src="images/ppf-full-front.png" alt="Full Front PPF coverage area shown on a Mercedes AMG GT">
+          </div>
           <p class="ppf-visual-title">Full Front PPF</p>
           <p class="ppf-visual-desc">Full Hood, Front Bumper &amp; Fenders</p>
         </div>
-        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar,rocker,door">
-          <div class="car-svg-container"></div>
+        <div class="ppf-visual-item">
+          <div class="ppf-visual-img">
+            <img src="images/ppf-full-front-lower-sides.png" alt="Full Front plus Lower Sides PPF coverage area shown on a Mercedes AMG GT">
+          </div>
           <p class="ppf-visual-title">Full Front + Lower Sides PPF</p>
           <p class="ppf-visual-desc">Full Front + Rocker Panels, Lower Doors &amp; Mirrors</p>
         </div>
-        <div class="ppf-visual-item" data-zones="front-bumper,headlight,hood,front-fender,mirror,a-pillar,rocker,door,rear-bumper,trunk,rear-quarter,roof">
-          <div class="car-svg-container"></div>
+        <div class="ppf-visual-item">
+          <div class="ppf-visual-img">
+            <img src="images/ppf-full-body.png" alt="Full Body PPF coverage shown on a Mercedes AMG GT">
+          </div>
           <p class="ppf-visual-title">Full Body PPF</p>
           <p class="ppf-visual-desc">Complete Coverage: All Body Panels &amp; Surfaces</p>
         </div>
       </div>
 
       <div class="packages-grid">
-        <div class="package-card">
-          <h3>Partial Front</h3>
-          <p class="package-desc">Essential protection for the highest-impact zones</p>
-          <ul>
-            <li>Hood (partial, leading edge)</li>
-            <li>Front bumper</li>
-            <li>Fender edges</li>
-          </ul>
-          <a href="#quote" class="btn btn-outline">Get Quote</a>
-        </div>
         <div class="package-card popular">
           <div class="package-badge">Most Popular</div>
           <h3>Full Front</h3>
@@ -804,6 +772,11 @@
     </div>
   </footer>
 
+  <script>
+    // Block main.js auto-open — landing.js handles popup timing instead.
+    sessionStorage.setItem('popupDismissed', '1');
+  </script>
   <script src="js/main.js"></script>
+  <script src="js/landing.js"></script>
 </body>
 </html>
