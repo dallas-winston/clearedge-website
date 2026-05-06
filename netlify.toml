@@ -1,0 +1,9 @@
+[build]
+  publish = "."
+
+[functions]
+  directory = "netlify/functions"
+  node_bundler = "nft"
+
+[functions."check-invoices"]
+  schedule = "*/5 * * * *"

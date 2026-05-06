@@ -78,6 +78,14 @@ async function sendToWeb3Forms(data) {
   return res.json();
 }
 
+async function sendToAirtable(data) {
+  await fetch('/.netlify/functions/submit-lead', {
+    method: 'POST',
+    headers: { 'Content-Type': 'application/json' },
+    body: JSON.stringify(data),
+  });
+}
+
 async function sendToDiscord(embed) {
   const url = CLEAREDGE_CONFIG.discordWebhookUrl;
   if (!url || url === 'YOUR_DISCORD_WEBHOOK_URL') return;
@@ -127,7 +135,9 @@ async function submitLead(formData, source) {
     timestamp: new Date().toISOString(),
   });
 
-  const results = await Promise.allSettled([web3Promise, discordPromise]);
+  const airtablePromise = sendToAirtable(formData);
+
+  const results = await Promise.allSettled([web3Promise, discordPromise, airtablePromise]);
   var web3Result = results[0];
   if (web3Result.status === 'rejected') throw web3Result.reason;
   return web3Result.value;
