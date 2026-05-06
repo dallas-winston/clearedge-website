@@ -119,3 +119,4 @@ The site is optimized for both traditional search engines and AI search (ChatGPT
 ## Still TODO
 - Gallery section with real vehicle photos
 - `logo-full.png` not placed on site yet
+- Google Ads conversion tag: Conversion ID `AW-18137105821` is live in `thank-you.html`. Still need the Conversion Label — replace `YYYYYYYYYY` in `thank-you.html` after creating a conversion action in Google Ads > Goals > Conversions > New conversion action > Website.

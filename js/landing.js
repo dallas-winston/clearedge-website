@@ -26,9 +26,7 @@
         service: heroForm.querySelector('[name="service"]').value,
       }, 'Landing Page Hero Form (Meta Ad)');
 
-      sessionStorage.setItem('heroFormSubmitted', '1');
-      heroForm.style.display = 'none';
-      heroSuccess.classList.add('visible');
+      window.location.href = '/thank-you.html';
     } catch (err) {
       btn.textContent = 'Something went wrong — please call us';
       btn.style.background = '#a33';

@@ -207,11 +207,7 @@ async function submitLead(formData, source) {
           smsConsent: popupForm.querySelector('[name="smsConsent"]').checked,
         }, 'Quick Quote (Homepage)');
 
-        btn.textContent = 'Request Sent! We\'ll be in touch.';
-        btn.style.background = '#2a7a2a';
-        btn.style.color = '#fff';
-        popupForm.reset();
-        setTimeout(closePopup, 2200);
+        window.location.href = '/thank-you.html';
       } catch (err) {
         btn.textContent = 'Something went wrong — please call us';
         btn.style.background = '#a33';
@@ -385,18 +381,7 @@ if (contactForm) {
         howFound: contactForm.querySelector('[name="howFound"]').value,
       }, 'Landing Page Form');
 
-      btn.textContent = 'Request Sent!';
-      btn.style.background = '#2a7a2a';
-      btn.style.color = '#fff';
-      contactForm.reset();
-      contactForm.querySelectorAll('.field-error').forEach(function (el) { el.remove(); });
-      contactForm.querySelectorAll('.input-error').forEach(function (el) { el.classList.remove('input-error'); });
-      setTimeout(function () {
-        btn.textContent = originalText;
-        btn.style.background = '';
-        btn.style.color = '';
-        btn.disabled = false;
-      }, 4000);
+      window.location.href = '/thank-you.html';
     } catch (err) {
       btn.textContent = 'Something went wrong — please call us';
       btn.style.background = '#a33';
