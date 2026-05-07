@@ -42,6 +42,7 @@ clearedge/
 │   ├── ppf-full-front-lower-sides.png # PPF coverage visual (Full Front + Lower Sides)
 │   ├── ppf-full-body.png              # PPF coverage visual (Full Body)
 │   └── qr-code.svg / qr-code.png     # QR code assets
+├── thank-you.html          # Post-submission thank you page (conversion tracking)
 ├── robots.txt              # Allows all crawlers, points to sitemap
 ├── sitemap.xml             # All page URLs for search engines
 ├── llms.txt                # Plain-text site summary for AI crawlers
@@ -73,6 +74,13 @@ Same structure as index.html but with:
 - Loads `landing.js` for hero form submission
 - Canonical tag points to index.html (avoids duplicate content)
 - PPF packages section shows 3 tiers (no Partial Front)
+
+### thank-you.html (conversion page)
+Post-form-submission thank you page. All three forms redirect here on success.
+- `noindex, nofollow` — not indexed by search engines
+- Fires Google Ads conversion event (`AW-18137105821/JuQrCJv256gcEJ2LuchD`)
+- Fires Meta Pixel `Lead` event
+- Shows next-steps summary and back-to-home / blog CTAs
 
 ### Blog (blog/)
 4 SEO-optimized articles targeting high-value search queries:
@@ -109,7 +117,12 @@ The site is optimized for both traditional search engines and AI search (ChatGPT
 - **Inline quote form** (both pages): first/last name, email, phone, vehicle details, service, message, "how found"
 - **Hero form** (landing.html only): name, phone, service
 - All forms use client-side validation in `main.js` and submit via Web3Forms + Discord webhook
+- On success, all three forms redirect to `/thank-you.html` (triggers Google Ads + Meta conversion tracking)
 - Meta Pixel tracks PageView on both pages; landing.js tags submissions as "Landing Page Hero Form (Meta Ad)"
+
+## Conversion Tracking
+- **Google Ads:** Base tag (`AW-18137105821`) on `index.html`, `landing.html`, and `thank-you.html`. Conversion event fires on `thank-you.html` — action: "Submit lead form (1)", send_to: `AW-18137105821/JuQrCJv256gcEJ2LuchD`
+- **Meta Pixel:** Pixel ID `26513218314954688`. `PageView` on all pages. `Lead` event fires on `thank-you.html`.
 
 ## Hours
 - Monday - Friday: 8am - 6pm
@@ -119,4 +132,3 @@ The site is optimized for both traditional search engines and AI search (ChatGPT
 ## Still TODO
 - Gallery section with real vehicle photos
 - `logo-full.png` not placed on site yet
-- Google Ads conversion tag: Conversion ID `AW-18137105821` is live in `thank-you.html`. Still need the Conversion Label — replace `YYYYYYYYYY` in `thank-you.html` after creating a conversion action in Google Ads > Goals > Conversions > New conversion action > Website.
